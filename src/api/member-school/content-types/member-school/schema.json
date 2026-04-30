@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "member_schools",
+  "info": {
+    "singularName": "member-school",
+    "pluralName": "member-schools",
+    "displayName": "Member School"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "director": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "fbLink": {
+      "type": "string"
+    },
+    "mapEmbed": {
+      "type": "text"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

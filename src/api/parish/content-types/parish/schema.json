@@ -1,0 +1,79 @@
+{
+  "kind": "collectionType",
+  "collectionName": "parishes",
+  "info": {
+    "singularName": "parish",
+    "pluralName": "parishes",
+    "displayName": "Parish"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "shortName": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "address": {
+      "type": "string"
+    },
+    "vicariate": {
+      "type": "enumeration",
+      "enum": [
+        "San Roque",
+        "Sacred Heart",
+        "Our Lady of Grace",
+        "San Jose de Navotas",
+        "San Bartolome"
+      ]
+    },
+    "coverImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "carousel": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "tabHistory": {
+      "type": "richtext"
+    },
+    "tabPatrons": {
+      "type": "richtext"
+    },
+    "tabSchedules": {
+      "type": "richtext"
+    },
+    "tabMaps": {
+      "type": "richtext"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "facebook": {
+      "type": "string"
+    }
+  }
+}
