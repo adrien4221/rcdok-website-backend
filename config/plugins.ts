@@ -1,6 +1,7 @@
 import type { Core } from '@strapi/strapi';
 
-const config = ({ env }) => ({
+const config = ({ env }: { env: (key: string) => string | undefined }) => ({
+  // ... any other plugins you might have
   upload: {
     config: {
       provider: 'cloudinary',
